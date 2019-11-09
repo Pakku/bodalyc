@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes|Lato|Merriweather+Sans|Parisienne&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -11098,5 +11098,30 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+#invitation {
+  background: url("/images/invitacion-back.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#invitation .big-name {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#invitation .big-name .names-wrapper {
+  font-family: "Great Vibes";
+  font-size: 11rem;
+  color: palevioletred;
+  line-height: 1;
+}
+
+#invitation .big-name .names-wrapper .ampersand {
+  font-size: 19rem;
+  line-height: 1.4;
 }
 

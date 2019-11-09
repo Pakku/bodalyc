@@ -1,0 +1,23 @@
+#invitation {
+	background: url('/images/invitacion-back.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    .big-name {
+    	position: fixed;
+	    width: 100%;
+	    top: 50%;
+	    transform: translateY(-50%);
+
+	    .names-wrapper {
+		    font-family: 'Great Vibes';
+		    font-size: 11rem;
+		    color: palevioletred;
+		    line-height: 1;
+
+		    .ampersand {
+		    	font-size: 19rem;
+    			line-height: 1.4;
+		    }
+		}
+    }
+}
