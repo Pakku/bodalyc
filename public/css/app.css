@@ -11101,13 +11101,60 @@ a.text-dark:focus {
 }
 
 #invitation {
-  background: url("/images/invitacion-back.jpg") no-repeat center center fixed;
+  background: url("/images/invitacion-back-photos.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+#invitation .opacity-layer {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+#invitation .quote {
+  font-family: "Lato";
+  color: #FFF;
+  font-size: 1rem;
+  line-height: 120%;
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  #invitation .quote {
+    font-size: 1.3rem;
+  }
+}
+
+#invitation .introduction {
+  font-family: "Great Vibes";
+  color: palevioletred;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  #invitation .introduction {
+    top: 20%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+  }
 }
 
 #invitation .big-name {
   position: fixed;
   width: 100%;
+  left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -11115,13 +11162,91 @@ a.text-dark:focus {
 
 #invitation .big-name .names-wrapper {
   font-family: "Great Vibes";
-  font-size: 11rem;
+  font-size: 4rem;
   color: palevioletred;
   line-height: 1;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  #invitation .big-name .names-wrapper {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #invitation .big-name .names-wrapper {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #invitation .big-name .names-wrapper {
+    font-size: 9rem;
+  }
 }
 
 #invitation .big-name .names-wrapper .ampersand {
-  font-size: 19rem;
+  font-size: 6rem;
+  display: inline-block;
+  vertical-align: text-bottom;
   line-height: 1.4;
+}
+
+@media screen and (min-width: 375px) {
+  #invitation .big-name .names-wrapper .ampersand {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #invitation .big-name .names-wrapper .ampersand {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #invitation .big-name .names-wrapper .ampersand {
+    font-size: 13rem;
+  }
+}
+
+#invitation .big-name .names-wrapper .names {
+  display: inline-block;
+}
+
+#invitation .after-wrapper {
+  font-family: "Great Vibes";
+  color: palevioletred;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #invitation .after-wrapper {
+    font-size: 1.8rem;
+  }
+}
+
+#invitation .after-wrapper .more-information .button {
+  background-color: palevioletred;
+  border: 0;
+  color: #FFF;
+  border-radius: 45px;
+  padding: 0.2rem 1.4rem;
+  font-size: 1.2rem;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#invitation .after-wrapper .more-information .button:hover {
+  background-color: #FFF;
+  color: palevioletred;
 }
 
