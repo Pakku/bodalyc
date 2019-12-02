@@ -11359,12 +11359,13 @@ a.text-dark:focus {
 #invitation {
   background: url("/images/invitacion-back-photos.jpg") no-repeat center center fixed;
   background-size: cover;
-  min-height: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 #invitation .opacity-layer {
   height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: #000;
   position: absolute;
