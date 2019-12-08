@@ -37028,12 +37028,19 @@ app.init = function () {
 app.Cms = {
   init: function init() {
     app.Cms.copyLinks();
+    app.Cms.confirmSubmit();
   },
   copyLinks: function copyLinks() {
     $('.js-copy-link').on('click', function () {
       var link = $(this).closest('.link-wrapper').find('.link').attr('href');
       copyToClipboard(link);
       alert('Enlace copiado');
+    });
+  },
+  confirmSubmit: function confirmSubmit() {
+    $('.js-confirm').on('submit', function () {
+      var message = $(this).data('message');
+      return confirm(message);
     });
   }
 };

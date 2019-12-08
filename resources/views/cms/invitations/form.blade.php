@@ -85,6 +85,17 @@
                             @endif
                         </button>
                     </form>
+
+                    @if (isset($invitation))
+                    <form method="post" class="js-confirm mt-5" data-message="{{ __('bodalyc.management.invitations.confirmDelete') }}" action="{{ route('invitations.destroy', $invitation) }}" 
+                    >
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger btn-sm">
+                            {{ __('bodalyc.management.invitations.delete') }}
+                        </button>
+                    </form>
+                    @endif
                 </div>
             </div>
         </div>

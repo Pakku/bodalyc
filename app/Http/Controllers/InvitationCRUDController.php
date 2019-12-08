@@ -52,7 +52,7 @@ class InvitationCRUDController extends Controller
 
         Log::info('Invitation created', ['invitation' => $invitation]);
 
-        return redirect()->route('invitations.index');
+        return redirect()->route('invitations.edit', $invitation);
     }
 
     /**
@@ -102,7 +102,7 @@ class InvitationCRUDController extends Controller
 
         Log::info('Invitation updated', ['invitation' => $invitation]);
 
-        return redirect()->route('invitations.index');
+        return redirect()->route('invitations.edit', $invitation);
     }
 
     /**
@@ -113,6 +113,7 @@ class InvitationCRUDController extends Controller
      */
     public function destroy(Invitation $invitation)
     {
-        //
+        $invitation->delete();
+        return redirect()->route('invitations.index');
     }
 }

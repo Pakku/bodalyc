@@ -23,12 +23,19 @@ app.init = function () {
 app.Cms = {
 	init: function () {
 		app.Cms.copyLinks();
+		app.Cms.confirmSubmit();
 	},
 	copyLinks: function () {
 		$('.js-copy-link').on('click', function () {
 			let link = $(this).closest('.link-wrapper').find('.link').attr('href');
 			copyToClipboard(link);
 			alert('Enlace copiado');
+		});
+	},
+	confirmSubmit: function () {
+		$('.js-confirm').on('submit', function () {
+			let message = $(this).data('message');
+			return confirm(message);
 		});
 	}
 }
