@@ -8,6 +8,18 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+	
+	# Redirect to luciaycarlos
+    RewriteCond %{HTTP_HOST} ^www.carlosylucia\.com
+    RewriteRule ^ http://www.luciaycarlos.com%{REQUEST_URI} [L,R=301]
+	
+	# Force www subdomain
+    RewriteCond %{HTTP_HOST} ^luciaycarlos\.com
+    RewriteRule ^ http://www.luciaycarlos.com%{REQUEST_URI} [L,R=301]
+	
+	# Force www subdomain
+    RewriteCond %{HTTP_HOST} ^carlosylucia\.com
+    RewriteRule ^ http://www.luciaycarlos.com%{REQUEST_URI} [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
