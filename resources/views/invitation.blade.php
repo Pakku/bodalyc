@@ -1,5 +1,7 @@
 @extends('layouts.invitation')
 
+@section('title', __('bodalyc.invitation.title', ['name' => $invitation->name]))
+
 @section('content')
 <div class="opacity-layer">
 </div>

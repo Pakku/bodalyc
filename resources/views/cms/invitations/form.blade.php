@@ -15,7 +15,7 @@
 
                 <div class="card-body">
                     @if (isset($invitation))
-                    <small>Última modificación por {{$invitation->user->name}} en {{$invitation->updated_at}}</small>
+                    <small>{{ __('bodalyc.management.invitations.lastModification', ['user' => $invitation->user->name, 'date' => $invitation->updated_at]) }}</small>
                     <div class="link-wrapper">
                         <div class="comment">{{ __('bodalyc.management.invitations.link') }}: </div>
                         <a href="{{$invitation->getLink()}}" class="link" target="_blank">{{$invitation->getLink()}}</a>

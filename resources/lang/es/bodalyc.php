@@ -1,7 +1,9 @@
 <?php
 
 return [
-
+    'invitation' => [
+        'title' => 'Invitación especial para :name',
+    ],
     'management' => [
         'menu' => [
             'invitations' => 'Invitaciones',
@@ -16,7 +18,8 @@ return [
             'link' => 'Enlace',
             'identifier' => 'Identificador',
             'delete' => 'Borrar invitación',
-            'confirmDelete' => '¿Borrar invitación?'
+            'confirmDelete' => '¿Borrar invitación?',
+            'lastModification' => 'Última modificación por :user en :date',
         ],
         'actions' => [
         	'edit' => 'Editar',
