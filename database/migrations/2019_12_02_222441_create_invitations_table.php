@@ -18,6 +18,8 @@ class CreateInvitationsTable extends Migration
             $table->string('identifier');
             $table->string('name');
             $table->string('text');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
 

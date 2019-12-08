@@ -37031,7 +37031,7 @@ app.Cms = {
   },
   copyLinks: function copyLinks() {
     $('.js-copy-link').on('click', function () {
-      var link = $(this).closest('td').find('.link').attr('href');
+      var link = $(this).closest('.link-wrapper').find('.link').attr('href');
       copyToClipboard(link);
       alert('Enlace copiado');
     });

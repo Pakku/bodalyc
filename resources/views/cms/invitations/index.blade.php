@@ -20,7 +20,7 @@
                             @foreach ($invitations as $invitation)
                                 <tr>
                                     <td>{{$invitation->name}}</td>
-                                    <td>
+                                    <td class="link-wrapper">
                                         <a href="{{$invitation->getLink()}}" class="link" target="_blank">{{$invitation->getLink()}}</a>
                                         <button class="btn btn-info btn-sm js-copy-link"><i class="far fa-copy"></i></button>
                                     </td>

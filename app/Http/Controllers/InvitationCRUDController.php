@@ -6,6 +6,8 @@ use App\Invitation;
 use Illuminate\Http\Request;
 use Input;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class InvitationCRUDController extends Controller
 {
@@ -45,7 +47,10 @@ class InvitationCRUDController extends Controller
 
         $properties = $request->only(['name', 'text']);
         $properties['identifier'] = Invitation::createSlugFromName($properties['name']);
+        $properties['user_id'] = Auth::user()->id;
         $invitation = Invitation::create($properties);
+
+        Log::info('Invitation created', ['invitation' => $invitation]);
 
         return redirect()->route('invitations.index');
     }
@@ -91,8 +96,11 @@ class InvitationCRUDController extends Controller
         ]);
 
         $properties = $request->only(['identifier', 'name', 'text']);
+        $properties['user_id'] = Auth::user()->id;
         $invitation->fill($properties);
         $invitation->save();
+
+        Log::info('Invitation updated', ['invitation' => $invitation]);
 
         return redirect()->route('invitations.index');
     }

@@ -26,7 +26,7 @@ app.Cms = {
 	},
 	copyLinks: function () {
 		$('.js-copy-link').on('click', function () {
-			let link = $(this).closest('td').find('.link').attr('href');
+			let link = $(this).closest('.link-wrapper').find('.link').attr('href');
 			copyToClipboard(link);
 			alert('Enlace copiado');
 		});

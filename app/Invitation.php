@@ -8,7 +8,7 @@ use Str;
 class Invitation extends Model
 {
     protected $fillable = [
-        'name', 'text', 'identifier', 
+        'name', 'text', 'identifier', 'user_id',
     ];
 
     public function getLink() {
@@ -19,6 +19,11 @@ class Invitation extends Model
 	{
 	    return 'identifier';
 	}
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 
     public static function createSlugFromName($name) {
         $slug = Str::limit(Str::slug($name), 40, '');

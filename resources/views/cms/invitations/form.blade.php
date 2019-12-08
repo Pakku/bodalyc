@@ -14,6 +14,14 @@
                 </div>
 
                 <div class="card-body">
+                    @if (isset($invitation))
+                    <small>Última modificación por {{$invitation->user->name}} en {{$invitation->updated_at}}</small>
+                    <div class="link-wrapper">
+                        <div class="comment">{{ __('bodalyc.management.invitations.link') }}: </div>
+                        <a href="{{$invitation->getLink()}}" class="link" target="_blank">{{$invitation->getLink()}}</a>
+                        <button class="btn btn-info btn-sm js-copy-link"><i class="far fa-copy"></i></button>
+                    </div>
+                    @endif
                     <form method="post"
                         @if (isset($invitation)) 
                             action="{{ route('invitations.update', $invitation) }}"
