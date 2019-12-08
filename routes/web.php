@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'InvitationController@index');
+Route::get('/', function() {
+	return "En construcción";
+});
 
 Auth::routes();
 

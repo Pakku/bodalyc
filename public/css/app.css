@@ -17246,7 +17246,7 @@ readers do not read off random characters that represent icons */
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  background-color: #333;
+  background-color: #000;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -17386,6 +17386,7 @@ readers do not read off random characters that represent icons */
   font-size: 1.2rem;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  outline: none;
 }
 
 #invitation .after-wrapper .more-information .button:hover {

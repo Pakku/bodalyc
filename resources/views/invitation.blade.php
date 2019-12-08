@@ -8,8 +8,8 @@
         "Esta parte de mi vida, este pequeño momento, lo llamo felicidad"
     </div>
     <div class="introduction">
-        <div class="first-part">Aurita y Pedro</div>
-        <div class="second-part">Te invitamos a nuestra boda</div>
+        <div class="first-part">{{$invitation->name}}</div>
+        <div class="second-part">{{$invitation->text}}</div>
     </div>
     <div class="row big-name">
         <div class="col-md-12">

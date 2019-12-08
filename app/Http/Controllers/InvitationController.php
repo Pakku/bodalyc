@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Invitation;
 
 class InvitationController extends Controller
 {
@@ -12,8 +13,8 @@ class InvitationController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Invitation $invitation)
     {
-        return view('invitation');
+        return view('invitation', compact('invitation'));
     }
 }
