@@ -17,8 +17,8 @@ Auth::routes();
 
 Route::get('/gestion', 'HomeController@index')->name('home');
 
-Route::get('/invitacion', 'InvitationController@index')->name('invitation');
-
 Route::prefix('gestion')->group(function () {
     Route::resource('invitations', 'InvitationCRUDController');
 });
+
+Route::get('/{invitation}', 'InvitationController@index')->name('invitation');

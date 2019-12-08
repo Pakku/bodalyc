@@ -15,7 +15,7 @@ class CreateInvitationsTable extends Migration
     {
         Schema::create('invitations', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->uuid('identifier');
+            $table->string('identifier');
             $table->string('name');
             $table->string('text');
             $table->timestamps();

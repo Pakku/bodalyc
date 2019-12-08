@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Invitation;
 use Illuminate\Http\Request;
+use Input;
 
 class InvitationCRUDController extends Controller
 {
@@ -14,7 +15,8 @@ class InvitationCRUDController extends Controller
      */
     public function index()
     {
-        return view('cms.invitations.index');
+        $invitations = Invitation::all();
+        return view('cms.invitations.index', compact('invitations'));
     }
 
     /**
@@ -24,7 +26,7 @@ class InvitationCRUDController extends Controller
      */
     public function create()
     {
-        //
+        return view('cms.invitations.form');
     }
 
     /**
@@ -35,7 +37,16 @@ class InvitationCRUDController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'string|required',
+            'text' => 'string|required',
+        ]);
+
+        $properties = $request->only(['name', 'text']);
+        $properties['identifier'] = Invitation::createSlugFromName($properties['name']);
+        $invitation = Invitation::create($properties);
+
+        return redirect()->route('invitations.index');
     }
 
     /**
