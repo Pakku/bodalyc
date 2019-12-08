@@ -12,8 +12,13 @@ class Invitation extends Model
     ];
 
     public function getLink() {
-    	return route('invitation', ['invitation' => $this->identifier]);
+    	return route('invitation', $this);
     }
+
+    public function getRouteKeyName()
+	{
+	    return 'identifier';
+	}
 
     public static function createSlugFromName($name) {
         $slug = Str::limit(Str::slug($name), 40, '');

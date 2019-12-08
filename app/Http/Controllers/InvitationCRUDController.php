@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Invitation;
 use Illuminate\Http\Request;
 use Input;
+use Illuminate\Validation\Rule;
 
 class InvitationCRUDController extends Controller
 {
@@ -57,7 +58,7 @@ class InvitationCRUDController extends Controller
      */
     public function show(Invitation $invitation)
     {
-        //
+        return redirect()->route('invitations.edit', $invitation);
     }
 
     /**
@@ -68,7 +69,7 @@ class InvitationCRUDController extends Controller
      */
     public function edit(Invitation $invitation)
     {
-        //
+        return view('cms.invitations.form', compact('invitation'));
     }
 
     /**
@@ -80,7 +81,20 @@ class InvitationCRUDController extends Controller
      */
     public function update(Request $request, Invitation $invitation)
     {
-        //
+        $request->validate([
+            'identifier' => [
+                'string', 'required', 'alpha_dash',
+                Rule::unique('invitations')->ignore($invitation->id),
+            ],
+            'name' => 'string|required',
+            'text' => 'string|required',
+        ]);
+
+        $properties = $request->only(['identifier', 'name', 'text']);
+        $invitation->fill($properties);
+        $invitation->save();
+
+        return redirect()->route('invitations.index');
     }
 
     /**

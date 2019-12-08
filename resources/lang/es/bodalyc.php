@@ -12,9 +12,14 @@ return [
             'name' => 'Nombre',
             'text' => 'Texto invitación',
             'defaultText' => 'Te invitamos a celebrar nuestra boda',
-            'edit' => 'Editar',
+            'edit' => 'Editar invitación',
             'link' => 'Enlace',
+            'identifier' => 'Identificador'
         ],
+        'actions' => [
+        	'edit' => 'Editar',
+        	'back' => 'Volver',
+        ]
     ],
 
 ];

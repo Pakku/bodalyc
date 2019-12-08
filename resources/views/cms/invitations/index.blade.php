@@ -13,7 +13,7 @@
                             <tr>
                                 <th>{{ __('bodalyc.management.invitations.name') }}</th>
                                 <th>{{ __('bodalyc.management.invitations.link') }}</th>
-                                <th>{{ __('bodalyc.management.invitations.edit') }}</th>
+                                <th>{{ __('bodalyc.management.actions.edit') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -22,9 +22,9 @@
                                     <td>{{$invitation->name}}</td>
                                     <td>
                                         <a href="{{$invitation->getLink()}}" class="link" target="_blank">{{$invitation->getLink()}}</a>
-                                        <button class="btn btn-info"></button>
+                                        <button class="btn btn-info btn-sm js-copy-link"><i class="far fa-copy"></i></button>
                                     </td>
-                                    <td></td>
+                                    <td><a class="btn btn-primary btn-sm" href="{{route('invitations.edit', $invitation)}}"><i class="far fa-edit"></i></a></td>
                                 </tr>
                             @endforeach
                         </tbody>

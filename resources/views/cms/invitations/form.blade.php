@@ -5,20 +5,77 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('bodalyc.management.invitations.create') }}</div>
+                <div class="card-header">
+                    @if (isset($invitation))
+                        {{ __('bodalyc.management.invitations.edit') }}
+                    @else
+                        {{ __('bodalyc.management.invitations.create') }}
+                    @endif
+                </div>
 
                 <div class="card-body">
-                    <form action="{{ route('invitations.store') }}" method="post">
+                    <form method="post"
+                        @if (isset($invitation)) 
+                            action="{{ route('invitations.update', $invitation) }}"
+                        @else
+                            action="{{ route('invitations.store') }}" 
+                        @endif  
+                    >
                         @csrf
+                        @if (isset($invitation))
+                            @method('PUT')
+                            <div class="form-group field text">
+                                <label for="identifier">{{ __('bodalyc.management.invitations.identifier') }}</label>
+                                @error('identifier')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
+                                <input type="text" id="identifier" name="identifier" placeholder="{{ __('bodalyc.management.invitations.identifier') }}"  required="required" class="form-control" 
+                                    @if (old('identifier'))
+                                        value="{{old('identifier')}}"
+                                    @else 
+                                        value="{{$invitation->identifier}}"
+                                    @endif
+                                />
+                            </div>
+                        @endif
                         <div class="form-group field text">
                             <label for="name">{{ __('bodalyc.management.invitations.name') }}</label>
-                            <input type="text" id="name" name="name" placeholder="{{ __('bodalyc.management.invitations.name') }}" required="required" class="form-control" />
+                            @error('name')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <input type="text" id="name" name="name" placeholder="{{ __('bodalyc.management.invitations.name') }}" required="required" class="form-control" 
+                                @if (old('name'))
+                                    value="{{old('name')}}"
+                                @elseif (isset($invitation)) 
+                                    value="{{$invitation->name}}" 
+                                @endif 
+                            />
                         </div>
                         <div class="form-group">
                             <label for="text">{{ __('bodalyc.management.invitations.text') }}</label>
-                            <input type="text" id="text" name="text" placeholder="{{ __('bodalyc.management.invitations.text') }}" required="required" class="form-control" value="{{ __('bodalyc.management.invitations.defaultText') }}" />
+                            @error('text')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <input type="text" id="text" name="text" placeholder="{{ __('bodalyc.management.invitations.text') }}" required="required" class="form-control" 
+                                @if (old('text'))
+                                    value="{{old('text')}}"
+                                @elseif (isset($invitation)) 
+                                    value="{{$invitation->text}}"
+                                @else
+                                    value="{{ __('bodalyc.management.invitations.defaultText') }}"
+                                @endif  
+                            />
                         </div>
-                        <button class="btn btn-primary">{{ __('bodalyc.management.invitations.create') }}</button>
+                        <a href="{{route('invitations.index')}}" class="btn btn-secondary">
+                            {{ __('bodalyc.management.actions.back') }}
+                        </a>
+                        <button class="btn btn-primary">
+                            @if (isset($invitation))
+                                {{ __('bodalyc.management.invitations.edit') }}
+                            @else
+                                {{ __('bodalyc.management.invitations.create') }}
+                            @endif
+                        </button>
                     </form>
                 </div>
             </div>
