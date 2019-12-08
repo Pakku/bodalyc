@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/gestion', 'HomeController@index')->name('home');
 
 Route::prefix('gestion')->group(function () {
-    Route::resource('invitations', 'InvitationCRUDController');
+    Route::resource('invitations', 'InvitationCRUDController')->middleware('auth');
 });
 
 Route::get('/{invitation}', 'InvitationController@index')->name('invitation');
