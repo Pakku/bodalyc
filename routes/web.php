@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function() {
-	return "En construcción";
-})->name('main');
+Route::get('/', 'Auth\Guests\LoginController@showLoginForm')->name('main');
 
-
+Route::post('/guestlogin', 'Auth\Guests\LoginController@login')->name('guestlogin');
 
 Auth::routes();
 
+Route::get('/app', function() {
+	return "En construcción";
+})->name('main-app');
 
 Route::get('/gestion', 'HomeController@index')->name('home');
 
