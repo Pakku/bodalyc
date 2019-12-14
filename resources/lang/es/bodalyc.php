@@ -32,6 +32,8 @@ return [
             'invitation' => 'Invitación de origen',
             'email' => 'Email',
             'superadmin' => 'Administrador',
+            'password' => 'Contraseña',
+            'passwordConfirmation' => 'Confirmar contraseña'
         ],
         'actions' => [
         	'edit' => 'Editar',

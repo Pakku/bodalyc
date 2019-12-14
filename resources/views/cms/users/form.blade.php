@@ -57,6 +57,25 @@
                                 <label for="superadmin">{{ __('bodalyc.management.users.superadmin') }}</label>
                             </div>
                         </div>
+                        <hr />
+                        <h5>Cambiar contraseña</h5>
+                        <div class="form-group field text">
+                            <label for="password">{{ __('bodalyc.management.users.password') }}</label>
+                            @error('password')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <input type="password" id="password" name="password" placeholder="{{ __('bodalyc.management.users.password') }}" class="form-control" 
+                            />
+                        </div>
+
+                        <div class="form-group field text">
+                            <label for="password-confirmation">{{ __('bodalyc.management.users.passwordConfirmation') }}</label>
+                            @error('password_confirmation')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                            <input type="password" id="password-confirmation" name="password_confirmation" placeholder="{{ __('bodalyc.management.users.passwordConfirmation') }}" class="form-control" 
+                            />
+                        </div>
                         <a href="{{route('users.index')}}" class="btn btn-secondary">
                             {{ __('bodalyc.management.actions.back') }}
                         </a>

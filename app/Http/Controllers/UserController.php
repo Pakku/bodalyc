@@ -8,6 +8,7 @@ use Input;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -60,11 +61,15 @@ class UserController extends Controller
             ],
             'name' => 'string|required',
             'superadmin' => 'boolean',
+            'password' => 'nullable|string|min:6|confirmed',
         ]);
 
         $properties = $request->only(['email', 'name', 'superadmin']);
         if (!isset($properties['superadmin'])) {
             $properties['superadmin'] = false;
+        }
+        if ($request->has('password')) {
+            $properties['password'] = Hash::make($request->get('password'));
         }
         $user->fill($properties);
         $user->save();
