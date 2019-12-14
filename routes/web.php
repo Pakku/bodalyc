@@ -24,7 +24,7 @@ Route::get('/app', function() {
 Route::get('/gestion', 'HomeController@index')->name('home');
 
 Route::prefix('gestion')->group(function () {
-    Route::resource('invitations', 'InvitationCRUDController')->middleware('auth');
+    Route::resource('invitations', 'InvitationCRUDController')->middleware('admin-auth');
 });
 
 Route::get('/{invitation}', 'InvitationController@index')->name('invitation');
