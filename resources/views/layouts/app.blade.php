@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('invitations.index') }}">{{ __('bodalyc.management.menu.invitations') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('users.index') }}">{{ __('bodalyc.management.menu.users') }}</a>
+                        </li>
                         @endauth
                     </ul>
 

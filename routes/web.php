@@ -25,6 +25,9 @@ Route::get('/gestion', 'HomeController@index')->name('home');
 
 Route::prefix('gestion')->group(function () {
     Route::resource('invitations', 'InvitationCRUDController')->middleware('admin-auth');
+    Route::resource('users', 'UserController')->middleware('admin-auth')->except([
+		    'create', 'store'
+		]);
 });
 
 Route::get('/{invitation}', 'InvitationController@index')->name('invitation');

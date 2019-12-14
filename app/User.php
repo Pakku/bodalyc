@@ -36,4 +36,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function comesFromInvitation() {
+        return $this->invitation_id;
+    }
+
+    public function invitation()
+    {
+        return $this->belongsTo('App\Invitation', 'invitation_id');
+    }
 }
