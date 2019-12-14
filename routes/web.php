@@ -13,9 +13,12 @@
 
 Route::get('/', function() {
 	return "En construcción";
-});
+})->name('main');
+
+
 
 Auth::routes();
+
 
 Route::get('/gestion', 'HomeController@index')->name('home');
 

@@ -17,8 +17,18 @@ function copyToClipboard(text) {
 app = {};
 
 app.init = function () {
+	app.Invitation.init();
 	app.Cms.init();
 }
+
+app.Invitation = {
+	init: function () {
+		$('.js-register').on('click', () => {
+			$('#step2').removeClass('d-none');
+			$('#step1').addClass('d-none');
+		});;
+	}
+};
 
 app.Cms = {
 	init: function () {

@@ -17394,3 +17394,46 @@ readers do not read off random characters that represent icons */
   color: palevioletred;
 }
 
+#invitation .card {
+  max-height: 90vh;
+  overflow: auto;
+}
+
+#invitation #step2 .card-header {
+  background-color: #FFF;
+}
+
+#invitation #step2 .card-body {
+  font-family: "Lato";
+}
+
+#invitation #step2 .big-name {
+  position: relative;
+  top: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#invitation #step2 .big-name .names-wrapper {
+  font-size: 2rem;
+}
+
+#invitation #step2 .big-name .names-wrapper .ampersand {
+  font-size: 3rem;
+}
+
+#invitation #step2 .btn-pink {
+  background-color: palevioletred;
+  border: 0;
+  color: #FFF;
+  border-radius: 45px;
+  padding: 0.2rem 1.4rem;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  outline: none;
+}
+
+#invitation #step2 .btn-pink:hover {
+  background-color: #8b475d;
+}
+
