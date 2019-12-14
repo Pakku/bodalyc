@@ -30,6 +30,8 @@ return [
             'delete' => 'Borrar usuario',
             'confirmDelete' => '¿Borrar usuario?',
             'invitation' => 'Invitación de origen',
+            'email' => 'Email',
+            'superadmin' => 'Administrador',
         ],
         'actions' => [
         	'edit' => 'Editar',
