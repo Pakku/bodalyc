@@ -334,9 +334,9 @@
                     <div class="nicdark_fadein nicdark_filter greydark2 nicdark_absolute nicdark_height100percentage nicdark_width_percentage100">
                         <div class="nicdark_absolute nicdark_display_table nicdark_height100percentage nicdark_width_percentage100">
                             <div class="nicdark_cell nicdark_vertical_middle">
-                                <h1 class="signature extrasize white">The Restaurant</h1>
+                                <h1 class="signature extrasize white">Medellín, Colombia</h1>
                                 <div class="nicdark_space20"></div>
-                                <h4><a class="nicdark_outline white nicdark_mpopup_iframe" href="https://www.google.com/maps/embed?pb=!1m0!3m2!1sit!2sit!4v1427877272004!6m8!1m7!1styM4Iys9k4_T7wcwn2C9ig!2m2!1d35.308114!2d140.159077!3f32.01250984119264!4f-14.180621209416458!5f0.7820865974627469">-  VIEW THE MAP  -</a></h4>
+                                <h4><a class="nicdark_outline white" target="_blank" href="https://goo.gl/maps/t3PZTTtG5xKSfxTaA">-  Ver en Google Maps  -</a></h4>
                             </div>   
                         </div>   
                     </div>
@@ -363,9 +363,9 @@
                     <div class="nicdark_fadein nicdark_filter greydark2 nicdark_absolute nicdark_height100percentage nicdark_width_percentage100">
                         <div class="nicdark_absolute nicdark_display_table nicdark_height100percentage nicdark_width_percentage100">
                             <div class="nicdark_cell nicdark_vertical_middle">
-                                <h1 class="signature extrasize white">The Church</h1>
+                                <h1 class="signature extrasize white">Cartagena, España</h1>
                                 <div class="nicdark_space20"></div>
-                                <h4><a class="nicdark_outline white nicdark_mpopup_iframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.1401821666664!2d-73.94224433135228!3d40.79983246838383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xe1128434edad1933!2sSt.+Paul&#39;s+Church!5e0!3m2!1sit!2sit!4v1427877615428">-  VIEW THE MAP  -</a></h4>
+                                <h4><a class="nicdark_outline white" target="_blank" href="https://goo.gl/maps/jtHmrZxei79zgC3D7">-  Ver en Google Maps  -</a></h4>
                             </div>   
                         </div>   
                     </div>
@@ -412,13 +412,13 @@
                             <ul>
                                 
                                 <!--start second-->
-                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="RSVP">
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="PARROQUIA">
                                     <img src="img/slide/img3.jpg"  alt="" data-lazyload="img/slide/img3.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 </li>
                                 <!--end second-->
 
                                 <!--start second-->
-                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="MENU">
+                                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"  data-title="CHUSCALITO">
                                     <img src="img/slide/img4.jpg"  alt="" data-lazyload="img/slide/img4.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                                 </li>
                                 <!--end second-->
