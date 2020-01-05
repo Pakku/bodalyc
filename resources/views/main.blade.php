@@ -126,7 +126,7 @@
                     <ul>    
 
                         <!-- SLIDE  -->
-                        <li data-title="LOVE" data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                        <li data-title="AMOR" data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
                             <!-- MAIN IMAGE -->
                             <img src="img/slide/img2.jpg"  alt="img2"  data-bgposition="center center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" data-bgpositionend="center right">
                             <!-- LAYERS -->
@@ -194,7 +194,7 @@
                             </div>
                         </li>
                         <!-- SLIDE  -->
-                        <li data-title="COUPLE" data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
+                        <li data-title="PAREJA" data-transition="fade" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
                             <!-- MAIN IMAGE -->
                             <img src="img/slide/img1.jpg"  alt="img1"  data-bgposition="center center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="120" data-bgpositionend="center center">
                             <!-- LAYERS -->
