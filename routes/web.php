@@ -17,9 +17,7 @@ Route::post('/guestlogin', 'Auth\Guests\LoginController@login')->name('guestlogi
 
 Auth::routes();
 
-Route::get('/app', function() {
-	return "En construcción";
-})->name('main-app');
+Route::get('/app', 'MainController@index')->name('main-app');
 
 Route::get('/gestion', 'HomeController@index')->name('home');
 
