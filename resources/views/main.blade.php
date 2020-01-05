@@ -473,7 +473,7 @@
                                 <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">17:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
-                                    <h3>CEREMONIA DE MATRIMONIO</h3>                        
+                                    <h3 class="program-title">CEREMONIA DE MATRIMONIO</h3>                        
                                     <div class="nicdark_space20"></div>
                                     <p>En la Parroquia San Anselmo, contempla el comienzo de la épica saga que conmocionó al mundo, pero ¡ven con antelación, que la novia va a ser puntual!</p> 
                                 </div>
@@ -487,7 +487,7 @@
                                 <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">18:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
-                                    <h3>RECEPCIÓN</h3>                        
+                                    <h3 class="program-title">RECEPCIÓN</h3>                        
                                     <div class="nicdark_space20"></div>
                                     <p>¡Todos para el restaurante Chuscalito! De aquí ya no nos movemos. Aprovecharemos que la comida aún no ha manchado nuestra ropa ni el alcohol nuestra dignidad y nos haremos unas bonitas fotos mientras tomamos un aperitivo. </p> 
                                 </div>
@@ -501,7 +501,7 @@
                                 <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">19:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
-                                    <h3>CENA</h3>                        
+                                    <h3 class="program-title">CENA</h3>                        
                                     <div class="nicdark_space20"></div>
                                     <p>Esta es la parte más fácil, te sientas donde nosotros hayamos elegido, te comes los platos que te vayan trayendo y comentas con tus comensales que te lo estás pasando mejor que en la boda de la prima Maribel. A no ser que estés en la mesa de la prima Maribel, en ese caso te permitimos decir que la suya estuvo mucho mejor. (Pero prima Maribel, sabes que no es así)</p> 
                                 </div>
@@ -516,7 +516,7 @@
                                 <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">21:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive">
-                                    <h3>FURRUSCA</h3>                        
+                                    <h3 class="program-title">FURRUSCA</h3>                        
                                     <div class="nicdark_space20"></div>
                                     <p>¡A bajar la comida! Seguimos en el Chuscalito con el DJ Chazz hasta las 2, hora a la que echaremos a patadas a los que aún no se hayan ido.</p> 
                                 </div>
