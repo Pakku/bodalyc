@@ -470,7 +470,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">17:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">17:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
                                     <h3>CEREMONIA DE MATRIMONIO</h3>                        
@@ -484,7 +484,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative  nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">18:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">18:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
                                     <h3>RECEPCIÓN</h3>                        
@@ -498,7 +498,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative  nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">19:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">19:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
                                     <h3>CENA</h3>                        
@@ -513,7 +513,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative  nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">21:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">21:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive">
                                     <h3>FURRUSCA</h3>                        
