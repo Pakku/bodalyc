@@ -22,6 +22,8 @@
     <!--END CSS-->
     
     <!--google fonts-->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato|Merriweather+Sans|Parisienne&display=swap" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Halant:300,400,500' rel='stylesheet' type='text/css'> <!--Halant-->
     <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'> <!--Cinzel-->
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> <!--Great Vibes-->
@@ -741,7 +743,7 @@
         $(".nicdark_countdown_inline").countdown({
           date: endDate,
           render: function(data) {
-            $(this.el).html("<div class=\""+ display_days +" grid grid_3 percentage nomargin nicdark_bg_red \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.days, 3) +"</h1><div class=\"nicdark_space10\"></div><h2 class=\"white\">DAYS</h2><div class=\"nicdark_space40\"></div></div> <div class=\""+ display_hours +" grid grid_3 percentage nomargin nicdark_bg_violet \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.hours, 2) +"</h1><div class=\"nicdark_space10\"></div><h2 class=\"white\">HOURS</h2><div class=\"nicdark_space40\"></div></div><div class=\""+ display_minutes +" grid grid_3 percentage nomargin nicdark_bg_blue \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.min, 2) +"</h1><div class=\"nicdark_space10\"></div> <h2 class=\"white\">MIN</h2><div class=\"nicdark_space40\"></div></div><div class=\""+ display_seconds +" grid grid_3 percentage nomargin nicdark_bg_green \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.sec, 2) +"</h1> <div class=\"nicdark_space10\"></div> <h2 class=\"white\">SEC</h2> <div class=\"nicdark_space40\"></div></div>"); 
+            $(this.el).html("<div class=\""+ display_days +" grid grid_3 percentage nomargin nicdark_bg_red \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.days, 3) +"</h1><div class=\"nicdark_space10\"></div><h2 class=\"white\">DÍAS</h2><div class=\"nicdark_space40\"></div></div> <div class=\""+ display_hours +" grid grid_3 percentage nomargin nicdark_bg_violet \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.hours, 2) +"</h1><div class=\"nicdark_space10\"></div><h2 class=\"white\">HORAS</h2><div class=\"nicdark_space40\"></div></div><div class=\""+ display_minutes +" grid grid_3 percentage nomargin nicdark_bg_blue \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.min, 2) +"</h1><div class=\"nicdark_space10\"></div> <h2 class=\"white\">MIN</h2><div class=\"nicdark_space40\"></div></div><div class=\""+ display_seconds +" grid grid_3 percentage nomargin nicdark_bg_green \"><div class=\"nicdark_space40\"></div><h1 class=\"white extrasize\">"+ this.leadingZeros(data.sec, 2) +"</h1> <div class=\"nicdark_space10\"></div> <h2 class=\"white\">SEG</h2> <div class=\"nicdark_space40\"></div></div>"); 
           }
         });
         //END COUNTDOWN GRID SECTION
