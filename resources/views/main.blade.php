@@ -654,7 +654,7 @@
 <script src="js/plugins/revslider/jquery.themepunch.revolution.min.js"></script> <!--revslider-->
 
 <!--Google maps-->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
+<script src="https://maps.googleapis.com/maps/api/js?key={{config('app.gmaps')}}&sensor=true"></script> <!-- Google Map API -->
 <script src="js/main/infobox.min.js"></script> <!--infobox-->
 <!--<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>-->
 

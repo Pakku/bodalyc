@@ -28,6 +28,8 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'gmaps' => env('GOOGLE_MAPS_API', null),
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
