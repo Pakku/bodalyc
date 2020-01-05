@@ -14,7 +14,7 @@
     
     <!--START CSS--> 
     <link rel="stylesheet" href="css/nicdark_style.css"> <!--style-->
-    <link rel="stylesheet" href="css/nicdark_responsive.css"> <!--nicdark_responsive-->
+    <link rel="stylesheet" href="css/nicdark_responsive.css?t=20200105"> <!--nicdark_responsive-->
 
     <!--revslider-->
     <link rel="stylesheet" href="css/revslider/settings.css"> <!--revslider-->
