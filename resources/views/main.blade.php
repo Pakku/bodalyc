@@ -338,7 +338,7 @@
                  <div class="nicdark_focus nicdark_padding40 nicdark_sizing">
                     <h1 class="white">Medellín, Colombia</h1>
                     <div class="nicdark_space20"></div>
-                    <h3 class="white">29 de Febrero de 2020 a las 17:00</h3>
+                    <h3 class="white">29 de Febrero de 2020 a las 16:00</h3>
                     <div class="nicdark_space20"></div>
                     <div class="nicdark_divider left small"><span class="nicdark_bg_white "></span></div>
                     <div class="nicdark_space20"></div>
@@ -480,7 +480,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">17:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">16:00</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
                                     <h3 class="program-title">CEREMONIA DE MATRIMONIO</h3>                        
@@ -494,7 +494,7 @@
                             <!--start first-->
                             <div class="nicdark_textevidence nicdark_relative  nicdark_padding20 nicdark_sizing">
 
-                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">18:00</a>
+                                <a href="#" class="hora-rosa nicdark_displaynone_responsive nicdark_radius nicdark_width80 nicdark_marginleft20 nicdark_btn nicdark_absolute nicdark_bg_red title small white">17:30</a>
 
                                 <div class="nicdark_activity nicdark_marginleft140 nicdark_disable_marginleft_responsive ">
                                     <h3 class="program-title">RECEPCIÓN</h3>                        
